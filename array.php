@@ -54,3 +54,49 @@ endforeach
 
 
 ?>
+
+<?php
+
+//  multiDimensional Array
+
+// $city = [
+
+//   [1,"peshawar",2500],
+//   [2,"islamabad",3000],
+//   [3,"Lahore",2000]
+// ];
+
+// foreach($city as $cityData){
+//  foreach($cityData as $cityDetails){
+//   print_r($cityDetails);
+//  }
+
+// foreach($cityData as $cityDetails){
+//   print_r($cityDetails);
+// echo "</br>";
+
+//  }
+// echo "</br>";
+// }
+
+
+
+$city = [
+
+  [1,"peshawar",2500],
+  [2,"islamabad",3000],
+  [3,"Lahore",2000]
+];
+
+for($i=0;$i<count($city);$i++){
+  // print_r($city[$i]);
+  for($j=0;$j<count($city[$i]);$j++){
+    print_r($city[$i][$j]);
+    echo "</br>";
+  }
+
+}
+
+
+
+?>
